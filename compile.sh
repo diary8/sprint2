@@ -4,7 +4,7 @@
 SRC_DIR="src/main/java"
 
 # Répertoire de sortie pour les classes compilées
-OUT_DIR="out/production"
+OUT_DIR="out/target"
 
 # Crée le dossier de sortie s'il n'existe pas
 mkdir -p "$OUT_DIR"
@@ -15,4 +15,4 @@ javac -d "$OUT_DIR" $(find "$SRC_DIR" -name "*.java")
 # Message
 echo "Compilation terminée. Classes générées dans $OUT_DIR"
 
-java -cp out/production test.MainTest
+java -cp out/target test.MainTest
